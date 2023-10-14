@@ -2,9 +2,7 @@
 
 This is a clone of Expedia Website.
 
-[Expedia Website](https://www.expedia.com/)
-
-[Expedia Clone](https://expedia-clone.netlify.app/)
+[Live Deployed Link](https://expedia-clone.netlify.app/)
 
 #Demo Gif of the Project
 ![expedia demo](https://user-images.githubusercontent.com/42139446/110991035-1b3b3780-839a-11eb-8a4a-12f2b23ae2aa.gif)
