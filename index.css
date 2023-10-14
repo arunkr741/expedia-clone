@@ -1,0 +1,692 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* navbar */
+
+nav {
+  height: 80px;
+}
+a {
+  text-decoration: none;
+  color: #465280;
+}
+a:hover {
+  color: #005aeb;
+}
+.container-fluid {
+  padding-left: 150px !important;
+  padding-right: 150px !important;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.dropdown-nav {
+  color: #465280;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.dropdown-nav:hover,
+.dropdown-nav:focus {
+  color: #005aeb;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.dropdown-item {
+  color: #465280;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+/* navbar end  */
+
+.hero-box {
+  width: 100%;
+  height: 500px;
+  background: url("https://wallpaperaccess.com/full/436964.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+.hero-cont {
+  width: 80%;
+  height: auto;
+  background-color: #fff;
+  margin: auto;
+  /* border: 3px solid #005aeb; */
+  align-self: center;
+  margin-top: 70px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 20px rgba(24, 24, 24, 0.74);
+}
+
+#stay-booking {
+  display: flex;
+  flex-direction: column;
+}
+
+.no-of-people {
+  align-self: flex-end;
+  font-size: 15px;
+  color: #005aeb;
+  cursor: pointer;
+}
+
+.place-and-date {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.place-search {
+  width: 50%;
+  outline: none;
+  height: 40px;
+  border-radius: 10px !important;
+  border: 1px solid #465280;
+  padding-left: 20px;
+}
+
+.plane-search {
+  width: 24%;
+  outline: none;
+  height: 40px;
+  border-radius: 10px !important;
+  border: 1px solid #465280;
+  padding-left: 20px;
+}
+.place-search:focus {
+  border: 2px solid #005aeb;
+}
+
+.add-people-modal {
+  position: absolute;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  color: #001959;
+  background-color: #ffffff;
+  margin-top: 25px;
+  align-self: flex-end;
+  display: none;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 5px 10px rgb(51, 51, 51);
+}
+.nums-title {
+  font-size: 18px;
+  color: #001959;
+  font-weight: 700;
+}
+.room-no {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.adults,
+.children {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 15px;
+}
+.person-cat {
+  font-size: 15px;
+  font-weight: 400;
+  color: #001959;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  text-align: center;
+}
+
+.done {
+  background-color: #005aeb;
+  width: 100%;
+  margin-top: 20px;
+  color: #fff;
+  padding: 7px;
+}
+
+.done:hover {
+  background-color: #005aebcb;
+  color: #fff;
+}
+
+.add-flight-car {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 20px;
+  align-items: center;
+  margin-left: 2%;
+}
+
+.search-btn {
+  background-color: #005aeb;
+  color: #fff;
+  width: 200px;
+  align-self: center;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.date {
+  border: 1px solid #465280;
+  padding-left: 10px;
+  border-radius: 7px;
+  outline: none;
+}
+
+.date:focus {
+  border-color: #005aeb;
+}
+
+/* cont */
+.container {
+  width: 80%;
+  height: 800px;
+  margin: auto;
+}
+
+.covid-box {
+  width: 100%;
+  height: 200px;
+  background-color: #d5e7fb;
+  border-radius: 3px;
+}
+
+.covid-title {
+  color: #001959;
+  font-size: 28px;
+  font-weight: 600;
+  padding-top: 30px;
+  margin-left: 30px;
+}
+
+.covid-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  margin-top: 20px;
+  height: fit-content;
+}
+
+.covid-card {
+  background-color: white;
+  color: #001959;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+  width: 33%;
+  height: 80px;
+  border-radius: 5px;
+  padding-left: 20px;
+}
+.covid-card > .icon {
+  font-size: 30px;
+}
+
+.covid-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* -----------------Ideas For Your Next Trip {Started} ----------- */
+
+.ideas_trip {
+  width: 100%;
+  margin: auto;
+  height: 400px;
+  margin-top: 40px;
+}
+
+.ideas_heading {
+  width: 100%;
+  font-size: 28px;
+  font-family: 900 !important;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.ideas_cont {
+  display: flex;
+  width: 100%;
+  height: 78%;
+  /* background-color: aliceblue; */
+}
+
+.ideas_left {
+  width: 65%;
+  height: 100%;
+}
+.ideas_left_long {
+  height: 70%;
+  background-color: antiquewhite;
+  background-image: url("https://a.travel-assets.com/travel-assets-manager/gmvd-1715-staycations-pwa/US_PWA_562x240.jpg");
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.ideas_left_small {
+  height: 15%;
+}
+.ideas_right {
+  width: 35%;
+  height: 100%;
+}
+.ideas_right_top {
+  display: flex;
+  height: 47.25%;
+  margin: 0 3% 3% 3%;
+  /* margin-top: 0%; */
+}
+.ideas_right_bottom {
+  display: flex;
+  height: 47.25%;
+  margin: 3% 3% 3% 3%;
+}
+.ideas_right_top_left {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: burlywood;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/07/17/resort_pool_overlook__343365916__150.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+  width: 30%;
+  background-size: 170% 100%;
+}
+.ideas_right_bottom_left {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: burlywood;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/07/17/vacation_family__206331239__150.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+  width: 30%;
+  background-size: 180% 100%;
+  background-repeat: no-repeat;
+}
+
+.text-col {
+  color: #001959;
+}
+
+.bordering {
+  border: 0.5px solid#bed1ce;
+  border-radius: 10px;
+}
+
+.text_gapping {
+  padding: 10px;
+}
+.text_styling {
+  font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media only screen and (max-width: 990px) {
+  .ideas_trip {
+    width: 92%;
+    margin: auto;
+    height: 400px;
+  }
+
+  .ideas_heading {
+    width: 100%;
+  }
+  .ideas_cont {
+    /* display: flex; */
+    width: 100%;
+    height: 78%;
+    /* background-color: aliceblue; */
+  }
+
+  .ideas_left {
+    width: 65%;
+    height: 100%;
+  }
+  .ideas_left_long {
+    height: 70%;
+    background-color: antiquewhite;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .ideas_left_small {
+    height: 15%;
+  }
+  .ideas_right {
+    width: 35%;
+    height: 100%;
+  }
+  .ideas_right_top {
+    display: flex;
+    height: 47.25%;
+    margin: 0 3% 3% 3%;
+    /* margin-top: 0%; */
+  }
+  .ideas_right_bottom {
+    display: flex;
+    height: 47.25%;
+    margin: 3% 3% 3% 3%;
+  }
+  .ideas_right_top_left {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: burlywood;
+    width: 30%;
+  }
+  .text-col {
+    color: #001959;
+  }
+
+  .bordering {
+    border: 0.5px solid#bed1ce;
+    border-radius: 10px;
+  }
+
+  .ideas_gapping {
+    margin: 10px;
+  }
+  .text_styling {
+    font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+/* -----------------Ideas For Your Next Trip {Ended}----------- */
+
+/* Stay in the know with the Expedia app */
+
+.qr-section {
+  display: grid;
+  grid-template-columns: 35% 50% 15%;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  border: 1px solid #465280;
+  border-radius: 10px;
+  align-items: center;
+  padding: 2px;
+}
+
+.qr-content {
+  padding: 10px;
+}
+
+.qr-title {
+  font-size: 1.5rem;
+  color: #001959;
+  font-weight: 700;
+}
+
+.qr-sub {
+  color: #465280;
+  font-size: 15px;
+  margin-top: -5px;
+}
+
+.qr-sub-title {
+  font-size: 1.2rem;
+  color: #001959;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.qr-input {
+  width: 150px;
+  height: 40px;
+  padding-left: 5px;
+  outline: none;
+  border-radius: 7px;
+  border: 1px solid #465280;
+}
+.qr-input:focus {
+  border: 2px solid #005aeb;
+}
+.qr-button {
+  background-color: #005aeb;
+  color: white;
+  border: none;
+}
+.qr-end {
+  font-size: 10px;
+  margin-left: 2px;
+  margin-top: 5px;
+}
+
+/* ---------------------Explore Disc Save {Start}------------------------ */
+.exp_disc {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+}
+.exp_disc_header {
+  width: 100%;
+  font-size: 28px;
+  font-family: 900 !important;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.exp_disc_cont {
+  width: 100%;
+  height: 90%;
+}
+.exp_disc_box {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://a.travel-assets.com/travel-assets-manager/a032eb45-943c-4892-acac-d93f9cbeec4b/PWA_Spotlight_Medium_667x320_US_under80.jpg");
+  overflow: hidden;
+  background-size: 100% 160%;
+  border-radius: 10px;
+}
+.exp_disc_text {
+  color: white;
+  padding-top: 18%;
+}
+.exp_disc_text > h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+h3,
+h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+/* ---------------------Explore Disc Save {End}------------------------ */
+
+.end-tag-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  margin-top: 50px;
+}
+.end-tag-line > a {
+  margin-top: -3px;
+  color: #005aeb;
+}
+
+/* footer  */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding-bottom: 100px;
+}
+
+.footer > .links {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  justify-content: space-around;
+}
+
+.footer > .end-line {
+  font-size: 13px;
+  text-align: center;
+  max-width: 480px;
+  align-self: center;
+  line-height: 15px;
+  color: #465280;
+  margin-top: 40px;
+}
+
+.footer > img {
+  width: 150px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* chatbox */
+
+.circle {
+  display: none;
+  width: 100px;
+  height: 45px;
+  border-radius: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: #465280;
+  background-color: white;
+  border-radius: 35px;
+  text-align: center;
+  align-items: center;
+}
+.circle:hover {
+  background-color: #465280;
+  color: white;
+}
+.chatbox {
+  position: fixed;
+  display: none;
+  right: 50px;
+  bottom: 50px;
+  width: 400px;
+  background-color: rgba(128, 128, 128, 0.041);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #1d1d1d;
+  padding-bottom: 10px;
+}
+.circle > p {
+  padding-top: 10px;
+}
+
+.chatbox_header {
+  align-items: center;
+  display: flex;
+  gap: 60%;
+  padding-top: 0;
+  padding-left: 0;
+  background-color: #ffd500;
+  width: 100%;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.chatbox_header > p {
+  padding-left: 10px;
+}
+
+.chatbox_message {
+  background-color: white;
+  overflow-y: scroll;
+  width: 100%;
+  height: 300px;
+}
+.chatbox_message > div > p {
+  text-align: center;
+  margin: 3% 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.chatbox_message_line {
+  display: flex;
+  margin-bottom: 5%;
+}
+.chatbox_message_line > div {
+  margin: auto;
+  height: 2px;
+  background-color: gainsboro;
+  width: 40%;
+}
+.msg_bot_join > div {
+  margin-left: 45%;
+}
+.msg_bot_join > p {
+  margin: top 0% !important;
+}
+
+.chat_buttons {
+  background-color: white;
+  height: 200px;
+  width: 100%;
+}
+
+.chat_buttons > div > button {
+  margin-top: 3%;
+  background: none;
+  width: 120px;
+  height: 30px;
+  border: 2px solid #465280;
+  color: #465280;
+  border-radius: 30px;
+  margin-left: 5px;
+}
+.chat_buttons > div > button:hover {
+  background-color: #465280;
+  color: white;
+}
+
+.chat_buttons button {
+  font-size: 12px;
+}
+
+.msg_type {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  margin-top: 10%;
+  margin-left: 3%;
+  color: rgb(63, 54, 54);
+}
+.msg_type > input {
+  background: none;
+  border-radius: 5px;
+  width: 80%;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  border: 1px solid #465280;
+}
