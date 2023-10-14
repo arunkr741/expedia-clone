@@ -1,7 +1,5 @@
 # Expedia Clone
 
-Masai School - Unit 2 Project
-
 This is a clone of Expedia Website.
 
 [Expedia Website](https://www.expedia.com/)
@@ -42,13 +40,3 @@ SpecificCity Page
 - Git
 
 - Netlify
-
-## Contribution
-
-- Gaurav Tambe (SM2_059) 
-
-- Kamal Gupta (SM2_075)) 
-
-- Jagrati Panchal (SM2_070) 
-
-- Arun Kumar (SM2_026) 
